@@ -466,7 +466,7 @@
 <canvas id="bg-canvas"></canvas>
 
 <!-- ===== MUSIC ===== -->
-<button id="music-btn" onclick="toggleMusic()">🎵 মিউজিক চালু</button>
+<button id="music-btn" onclick="toggleMusic()">🎵 Play Music</button>
 
 <!-- ===== MAIN PAGE ===== -->
 <div id="main-page">
@@ -544,7 +544,7 @@
 })();
 
 // Countdown
-const bnDigits = ['০','১','২','৩','৪','৫'];
+const bnDigits = ['0','1','2','3','4','5'];
 const countEl = document.getElementById('countdown-num');
 let count = 5;
 
@@ -855,11 +855,11 @@ function toggleMusic() {
   const btn = document.getElementById('music-btn');
   if (!musicPlaying) {
     bgMusic.play();
-    btn.textContent = '🔇 মিউজিক বন্ধ';
+    btn.textContent = '🔇 Pause Music';
     musicPlaying = true;
   } else {
     bgMusic.pause();
-    btn.textContent = '🎵 মিউজিক চালু';
+    btn.textContent = '🎵 Play Music';
     musicPlaying = false;
   }
 }
